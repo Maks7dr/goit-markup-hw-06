@@ -700,7 +700,7 @@ address {
 .send:focus {
   background-color: #404bbf;
 }
-@madia (max-width: 767px) {
+@media (max-width: 767px) {
   .container {
     width: 735px;
     padding: 0 16px;
@@ -724,7 +724,7 @@ address {
     padding: 0 16px;
   }
 }
-@madia (min-width: 1158px) {
+@media (min-width: 1158px) {
   .container {
     width: 1126px;
     padding: 0 16px;
