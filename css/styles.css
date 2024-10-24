@@ -699,3 +699,18 @@ address {
 .send:focus {
   background-color: #404bbf;
 }
+@madia (max-width: 767px) {
+  .container {
+    width: 767px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1057px) {
+  .container {
+    width: 1157px;
+  }
+}
+@madia (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
