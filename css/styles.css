@@ -511,6 +511,7 @@ address {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   opacity: 0;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
@@ -702,15 +703,30 @@ address {
 @madia (max-width: 767px) {
   .container {
     width: 735px;
+    padding: 0 16px;
+  }
+  .container-header {
+    padding: 0;
+  }
+  .logo {
+    margin-right: 149px;
+  }
+  .navig {
+    visibility: hidden;
+  }
+  .address-header {
+    visibility: hidden;
   }
 }
 @media (min-width: 768px) and (max-width: 1057px) {
   .container {
     width: 1125px;
+    padding: 0 16px;
   }
 }
 @madia (min-width: 1158px) {
   .container {
     width: 1126px;
+    padding: 0 16px;
   }
 }
