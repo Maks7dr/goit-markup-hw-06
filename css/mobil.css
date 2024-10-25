@@ -165,7 +165,7 @@ button {
   margin: -1px;
   overflow: hidden;
 }
-.title-three {
+.title-three-info {
   color: #2e2f42;
   line-height: 1.11;
   font-size: 36px;
@@ -199,6 +199,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 72px;
+  align-items: center;
 }
 .ul-good-section-three {
   list-style-type: none;
