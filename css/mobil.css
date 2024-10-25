@@ -207,6 +207,7 @@ button {
   flex-basis: calc((100% - 3 * 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  max-width: 264px;
 }
 .team-name {
   padding: 32px 0;
@@ -283,6 +284,7 @@ button {
 .li-portfolio {
   flex-basis: calc((100% - 5 * 24px) / 6);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .text-payment {
   visibility: hidden;
@@ -306,6 +308,10 @@ button {
   font-weight: 500;
   margin-bottom: 8px;
   text-align: left;
+}
+.foto-portfolio {
+  width: 288px;
+  height: 280px;
 }
 .footer {
   background: #2e2f42;
@@ -426,6 +432,7 @@ button {
 .footer-email::placeholder {
   color: #fff;
 }
+
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
