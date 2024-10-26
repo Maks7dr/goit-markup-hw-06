@@ -818,10 +818,10 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 108px;
   }
   .footer-logotip {
     margin-right: 24px;
-    margin-left: 108px;
   }
   .logo-footer {
     text-align: left;
@@ -839,7 +839,104 @@ button {
   .label-footer {
     flex-direction: row;
   }
-  .footer-subscribe {
-    margin-left: 108px;
+  .modal {
+    width: 408px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .address-header {
+    display: flex;
+  }
+  .section-one {
+    padding: 188px 0;
+  }
+  .title-one {
+    margin-bottom: 48px;
+  }
+  .section-two {
+    padding: 120px 0;
+  }
+  .ul-section-two {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .li-info {
+    width: calc((100% - 72px) / 4);
+  }
+  .vector-info {
+    position: relative;
+    visibility: visible;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+  }
+  .title-three-info {
+    font-size: 20px;
+  }
+
+  .text-left {
+    font-weight: 400;
+  }
+  .section-three {
+    padding: 120px 0;
+  }
+  .ul-team {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .section-four {
+    padding: 120px 0;
+  }
+  .ul-good-section-four {
+    column-gap: 24px;
+    row-gap: 48px;
+    margin: 0;
+  }
+  .foto-portfolio {
+    width: 360px;
+  }
+
+  .payment {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-payment {
+    visibility: visible;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    padding: 40px 32px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .li-portfolio:hover .text-payment {
+    transform: translatey(0);
+  }
+  .footer {
+    padding: 100px 0;
   }
 }
