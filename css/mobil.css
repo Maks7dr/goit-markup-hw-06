@@ -841,6 +841,7 @@ button {
   }
   .modal {
     width: 408px;
+    min-height: 584px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -938,5 +939,15 @@ button {
   }
   .footer {
     padding: 100px 0;
+  }
+  .container-footer {
+    flex-wrap: nowrap;
+    margin-left: auto;
+  }
+  .footer-logotip {
+    margin-right: 120px;
+  }
+  .footer-media {
+    margin-right: 80px;
   }
 }
