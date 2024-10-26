@@ -690,10 +690,55 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #e7e9fc;
+  background-color: transparent;
 }
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
 .mobile-menu-nav {
   margin-bottom: auto;
+  display: block;
+}
+.mobile-ul-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+.mobile-studio-color {
+  color: #404bbf;
+}
+.mobile-navig {
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-navig:hover,
+.mobile-navig:focus {
+  color: #404bbf;
+}
+.mobile-address {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+  margin-bottom: 48px;
+  gap: 24px;
+}
+.social-left {
+  justify-content: left;
 }
 @media screen and (min-width: 768px) {
   .container {
