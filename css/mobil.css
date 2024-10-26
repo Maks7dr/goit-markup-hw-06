@@ -448,7 +448,8 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  opacity: 1;
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
@@ -653,6 +654,9 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
   }
   .container-line {
     position: absolute;
@@ -677,7 +681,6 @@ button {
   .nav {
     display: flex;
     align-items: center;
-    margin-right: 121px;
   }
   .logo {
     color: #4d5ae5;
@@ -766,5 +769,77 @@ button {
   .contact:hover,
   .contact:focus {
     color: #404bbf;
+  }
+  .section-one {
+    padding: 112px 0;
+  }
+  .title-one {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+  .ul-section-two {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .li-info {
+    width: calc((100% - 48px) / 2);
+    height: calc((100% - 144px) / 2);
+  }
+  .title-three-info {
+    text-align: left;
+  }
+  .text-left {
+    font-weight: 500;
+  }
+  .ul-team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  .ul-good-section-four {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .foto-portfolio {
+    width: 356px;
+    height: 300px;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-logotip {
+    margin-right: 24px;
+    margin-left: 108px;
+  }
+  .logo-footer {
+    text-align: left;
+  }
+  .text-footer {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #f4f4fd;
+    max-width: 264px;
+  }
+  .text-social {
+    text-align: left;
+  }
+  .label-footer {
+    flex-direction: row;
+  }
+  .footer-subscribe {
+    margin-left: 108px;
   }
 }
