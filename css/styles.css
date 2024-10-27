@@ -83,7 +83,8 @@ button {
 .container-line {
   display: flex;
   align-items: center;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .line-svg {
   display: block;
