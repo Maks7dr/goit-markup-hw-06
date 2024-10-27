@@ -64,7 +64,7 @@ button {
   text-decoration: none;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin: 16px 0;
+  margin: 0;
 }
 .logo-mob:hover,
 .logo-mob:focus {
@@ -73,14 +73,21 @@ button {
 .logo-web-mob {
   color: #2e2f42;
 }
+.btn-mobil-menu-open {
+  display: flex;
+  margin-left: 149px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 .container-line {
   display: flex;
   align-items: center;
+  padding: 16px 0;
 }
 .line-svg {
   display: block;
   fill: #2f2f37;
-  margin-left: 149px;
 }
 .section-one {
   background-image: linear-gradient(
@@ -89,6 +96,8 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(..//images/people.jpg);
+  max-width: 1158px;
+  min-width: 320px;
   background-color: #2e2f42;
   padding: 72px 0;
   background-position: center;
@@ -96,7 +105,6 @@ button {
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
 }
 .title-one {
   color: #ffffff;
@@ -173,6 +181,7 @@ button {
   font-weight: 700;
   margin-bottom: 8px;
   text-align: center;
+  margin-top: 0;
 }
 .text-left {
   font-size: 16px;
@@ -278,7 +287,7 @@ button {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
   margin: 0;
 }
 
@@ -751,9 +760,11 @@ button {
   color: #4d5ae5;
   margin-bottom: 48px;
   gap: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 .social-left {
   justify-content: left;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -773,7 +784,6 @@ button {
   }
   .container-header {
     display: flex;
-    padding: 0;
     justify-content: space-between;
     align-items: center;
     visibility: visible;
@@ -853,9 +863,10 @@ button {
     color: #404bbf;
   }
   .address-header {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 12px;
     margin: 0;
     padding: 0;
   }
@@ -866,7 +877,9 @@ button {
   }
   .contact {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -960,7 +973,13 @@ button {
     margin-right: 76px;
   }
   .address-header {
-    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .section-one {
     padding: 188px 0;
@@ -1053,8 +1072,11 @@ button {
   }
   .footer-logotip {
     margin-right: 120px;
+
+    margin-bottom: 0;
   }
   .footer-media {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
