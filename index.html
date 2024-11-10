@@ -59,15 +59,19 @@
         <a href="./index.html" class="logo-mob"
           >Web<span class="logo-web-mob">Studio</span></a
         >
-        <button type="button" class="btn-mobil-menu-open">
+        <button type="button" class="btn-mobil-menu-open js-open-menu">
           <svg width="24" height="24" class="line-svg">
             <use href="./images/icons.svg#line"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" name="close " type="button">
+          <button
+            class="mobile-menu-close js-close-menu"
+            name="close"
+            type="button"
+          >
             <svg width="8" height="8" class="mobil-fill">
               <use href="./images/icons.svg#exit"></use>
             </svg>
@@ -728,5 +732,12 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
