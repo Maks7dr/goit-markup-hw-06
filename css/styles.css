@@ -457,15 +457,11 @@ button {
   align-items: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+}
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-.modal-overlay.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 .modal {
   position: absolute;
@@ -479,8 +475,11 @@ button {
   overflow-y: auto;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-overlay.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 .exit-btn {
   position: absolute;

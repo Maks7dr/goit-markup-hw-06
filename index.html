@@ -136,7 +136,9 @@
       <section class="section-one">
         <div class="container">
           <h1 class="title-one">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn">Order Service</button>
+          <button type="button" class="btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- section informations -->
@@ -657,9 +659,9 @@
       </div>
     </footer>
     <!-- modal overlay -->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-hidden" data-modal>
       <div class="modal">
-        <button type="button" name="exit" class="exit-btn">
+        <button type="button" name="exit" class="exit-btn" data-modal-close>
           <svg width="8" height="8" class="exit-svg">
             <use href="./images/icons.svg#exit"></use>
           </svg>
@@ -739,5 +741,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/menu.js"></script>
+    <script scr="./js/modal-menu.js"></script>
   </body>
 </html>
